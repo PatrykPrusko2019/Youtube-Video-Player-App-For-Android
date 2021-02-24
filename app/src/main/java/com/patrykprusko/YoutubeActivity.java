@@ -13,7 +13,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 
 /**
- *  using url -> https://www.youtube.com/watch?v=HwQBSUD07vQ&list=PLd6x4-VpRx7jixWOSzAvK31_xqXWXG16p&ab_channel=BrunoTerrosa
+ *   using url -> https://www.youtube.com/watch?v=HwQBSUD07vQ&list=PLd6x4-VpRx7jixWOSzAvK31_xqXWXG16p&ab_channel=BrunoTerrosa
  */
 public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
