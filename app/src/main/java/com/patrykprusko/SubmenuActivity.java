@@ -9,6 +9,7 @@ import com.google.android.youtube.player.YouTubeStandalonePlayer;
 
 /**
  *  class submenu
+ *  using url -> https://www.youtube.com/watch?v=HwQBSUD07vQ&list=PLd6x4-VpRx7jixWOSzAvK31_xqXWXG16p&ab_channel=BrunoTerrosa
  */
 public class SubmenuActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -40,11 +41,13 @@ public class SubmenuActivity extends AppCompatActivity implements View.OnClickLi
         switch (v.getId()) {
 
             case R.id.buttonPlayVideo :
-                intent = YouTubeStandalonePlayer.createVideoIntent(this, GOOGLE_API_KEY, YOUTUBE_VIDEO_ID); // shows player youtube -> video
+                                                //createVideoIntent(Activity activity, String developerKey, String videoId, int timeMillis, boolean autoplay, boolean lightboxMode)
+                intent = YouTubeStandalonePlayer.createVideoIntent(this, GOOGLE_API_KEY, YOUTUBE_VIDEO_ID, 0 , true, false); // shows player youtube -> video
                 break;
 
             case R.id.buttonPlayPlaylist :
-                intent = YouTubeStandalonePlayer.createPlaylistIntent(this, GOOGLE_API_KEY, YOUTUBE_PLAYLIST); // shows player youtube -> playlist
+                                             //createPlaylistIntent(Activity activity, String developerKey, String playlistId, int startIndex, int timeMillis, boolean autoplay, boolean lightboxMode)
+                intent = YouTubeStandalonePlayer.createPlaylistIntent(this, GOOGLE_API_KEY, YOUTUBE_PLAYLIST, 0, 0, true, false); // shows player youtube -> playlist
                 break;
         }
 

@@ -1,5 +1,7 @@
 package com.patrykprusko;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ViewGroup;
@@ -45,6 +47,7 @@ public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlaye
 
         Log.d(TAG, " on Initialization Success ");
 
+
         //used 2 interfaces -> displaying messages on how the player behaves
         youTubePlayer.setPlaybackEventListener(playbackEventListener);
         youTubePlayer.setPlayerStateChangeListener(playerStateChangeListener);
@@ -53,6 +56,7 @@ public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlaye
              youTubePlayer.cueVideo(YOUTUBE_VIDEO_ID);
             //youTubePlayer.cuePlaylist(YOUTUBE_PLAYLIST);
         }
+
     }
 
     @Override

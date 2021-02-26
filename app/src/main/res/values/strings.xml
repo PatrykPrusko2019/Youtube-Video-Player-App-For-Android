@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">YoutubeVideoPlayerApp</string>
     <string name="button_play_single_video">Play single video</string>
-    <string name="button_open_submenu">Play submenu</string>
+    <string name="button_open_submenu">Open submenu</string>
     <string name="button_play_video">Play video</string>
     <string name="buttonPlayPlaylist">Play playlist</string>
     <string name="SubmenuActivity">Submenu</string>

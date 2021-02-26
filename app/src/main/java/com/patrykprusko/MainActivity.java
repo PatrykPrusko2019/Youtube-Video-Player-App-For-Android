@@ -1,7 +1,6 @@
 package com.patrykprusko;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +10,7 @@ import android.widget.Button;
 // ca15ad47-b77a-4e16-8f99-9b76227ea9aa -> Google api key
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPlaySingleVideo.setOnClickListener(this);
         btnPlaySubmenu.setOnClickListener(this);
 
-
-
-
     }
+
 
     @Override
     public void onClick(View v) {
@@ -46,5 +44,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //nothing
         }
         startActivity(intent);
+
     }
 }
