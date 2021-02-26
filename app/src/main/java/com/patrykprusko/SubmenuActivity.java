@@ -35,7 +35,6 @@ public class SubmenuActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-
         Intent intent = null;
 
         switch (v.getId()) {
